@@ -1,3 +1,5 @@
+<!doctype html>
+<html>
 <meta charset="utf-8">
 <title>WorldBuilding Generator</title>
 <link rel="stylesheet" href="style.css">
@@ -7,7 +9,7 @@
 <div class="container">
 <nav>
 <h1 class="logo"><a href="WBindex.html">HomeWorld Generator</a></h1>
-
+<form action="grade.php" method="post" id="quiz">
 <ul>
 <li><a href="Place and Time.html">Place and Time</a></li>
 <li><a href="Constructed Language.html">Constructed Language</a></li>
@@ -19,7 +21,93 @@
 </header>
 
 <body class="body">
-class="quiz"
+  <article><p>Time and Place are major aspects of worldbuilding. If your characters go anywhere or do anything, and they should, you need to know where and when they are going and doing.</p>
+  <p>White Room Syndrome is the effect of characters that could be in a blank floating space for all their surroundings matter.</p>
+    <p>In this generator, you will answer questions about your world to recieve details related to your choices, which can then be used to fix a white room.</p></article>
+<div class="quiz">
+ 
+  <ol> <h2>Place</h2>
+    
+    <li><h3>Biome</h3>
+      
+      <div>
+        <input type="checkbox" name="q-p1-1" id="question-p1-answers-1" value="1" />
+        <label for="question-p1-answers-1">1)Tropical Rainforest</label>
+    </div>
+          <div>
+        <input type="checkbox" name="q-p1-2" id="question-p1-answers-2" value="2" />
+        <label for="question-p1-answers-2">2)Monsoon</label>
+    </div>
+            <div>
+        <input type="checkbox" name="q-p1-3" id="question-p1-answers-3" value="3" />
+        <label for="question-p1-answers-3">3)Savannah </label>
+    </div>
+          <div>
+        <input type="checkbox" name="q-p1-4" id="question-p1-answers-4" value="4" />
+        <label for="question-p1-answers-4">4)Hot Desert</label>
+    </div>
+          <div>
+        <input type="checkbox" name="q-p1-5" id="question-p1-answers-5" value="5" />
+        <label for="question-p1-answers-5">5)Hot Steppe</label>
+    </div>     
+      <div>
+        <input type="checkbox" name="q-p1-6" id="question-p1-answers-6" value="6" />
+        <label for="question-p1-answers-6">6)Humid Continental</label>
+    </div>
+            <div>
+        <input type="checkbox" name="q-p1-7" id="question-p1-answers-7" value="7" />
+        <label for="question-p1-answers-7">1)Subarctic Continental</label>
+    </div>
+      
+          <div>
+        <input type="checkbox" name="q-p1-8" id="question-p1-answers-8" value="8" />
+        <label for="question-p1-answers-8">8)Mediterranian</label>
+    </div>
+          <div>
+        <input type="checkbox" name="q-p1-9" id="question-p1-answers-9" value="9" />
+        <label for="question-p1-answers-9">9)Oceanic</label>
+    </div>     
+      <div>
+        <input type="checkbox" name="q-p1-10" id="question-p1-answers-10" value="10" />
+        <label for="question-p1-answers-10">10)Humid Subtropical</label>
+    </div>
+            <div>
+        <input type="checkbox" name="q-p1-11" id="question-p1-answers-11" value="11" />
+        <label for="question-p1-answers-11">11)Cold Desert</label>
+    </div>
+          <div>
+        <input type="checkbox" name="q-p1-12" id="question-p1-answers-12" value="12" />
+        <label for="question-p1-answers-12">12)Cold Steppe</label>
+    </div>
+    
+          <div>
+        <input type="checkbox" name="q-p1-13" id="question-p1-answers-13" value="13" />
+        <label for="question-p1-answers-13">13)Polar Tundra</label>
+    </div>    
+      <div>
+        <input type="checkbox" name="q-p1-14" id="question-p1-answers-14" value="14" />
+        <label for="question-p1-answers-14">14)Polar Ice Cap </label>
+    </div>
+            <div>
+        <input type="checkbox" name="q-p1-15" id="question-p1-answers-15" value="15" />
+        <label for="question-p1-answers-15">15)Mixed Biome, Nomadic, Other</label>
+    </div>
+    </li>
+<h2>Time</h2>
+    <li><h3>
+      <div>
+        <input type="radio" name="q-t1-1" id="question-t1-answers-1" value="1" />
+        <label for="question-t1-answers-1">Yes</label>
+    </div>
+          <div>
+        <input type="radio" name="q-t1-2" id="question-t1-answers-2" value="2" />
+        <label for="question-t1-answers-2">No</label>
+      </li>
+    </ol>
+  </form>
+<input type="submit" value="Submit Quiz" />
+  
+</div>
 
 <footer>
 <div class="footer"> &copy; Copyright 2020
