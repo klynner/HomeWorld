@@ -1,8 +1,10 @@
 <!doctype html>
 <html>
+<head>
 <meta charset="utf-8">
 <title>WorldBuilding Generator</title>
 <link rel="stylesheet" href="style.css">
+<script src="Java.js"></script>
 </head>
 
 <header>
@@ -21,97 +23,226 @@
 </header>
 
 <body class="body">
-  <article><p>Time and Place are major aspects of worldbuilding. If your characters go anywhere or do anything, and they should, you need to know where and when they are going and doing.</p>
-  <p>White Room Syndrome is the effect of characters that could be in a blank floating space for all their surroundings matter.</p>
+
+  <article><p>Time and Place are major aspects of worldbuilding. If your characters go anywhere or do anything, which they should, you need to know where and when they are going and doing.</p>
+  <p>White Room Syndrome is the effect of characters that could be in a blank floating space because there is no setting.</p>
     <p>In this generator, you will answer questions about your world to recieve details related to your choices, which can then be used to fix a white room.</p></article>
+ <div> 
+  <form action="write" id="setting">
+  <fieldset>
+<ol> <h2>A Place to Be</h2>
   
-<form action="grade.php" method="post" id="quiz">
-  
-  <ol> <h2>A Place to Be</h2>
-    
-    <li><h3>Which Biome</h3>
-      
-      <div>
-        <input type="checkbox" name="q-p1-1" id="question-p1-answers-1" value="1" />
-        <label for="question-p1-answers-1">1)Tropical Rainforest</label>
-    </div>
-          <div>
-        <input type="checkbox" name="q-p1-2" id="question-p1-answers-2" value="2" />
-        <label for="question-p1-answers-2">2)Monsoon</label>
-    </div>
-            <div>
-        <input type="checkbox" name="q-p1-3" id="question-p1-answers-3" value="3" />
-        <label for="question-p1-answers-3">3)Savannah </label>
-    </div>
-          <div>
-        <input type="checkbox" name="q-p1-4" id="question-p1-answers-4" value="4" />
-        <label for="question-p1-answers-4">4)Hot Desert</label>
-    </div>
-          <div>
-        <input type="checkbox" name="q-p1-5" id="question-p1-answers-5" value="5" />
-        <label for="question-p1-answers-5">5)Hot Steppe</label>
-    </div>     
-      <div>
-        <input type="checkbox" name="q-p1-6" id="question-p1-answers-6" value="6" />
-        <label for="question-p1-answers-6">6)Humid Continental</label>
-    </div>
-            <div>
-        <input type="checkbox" name="q-p1-7" id="question-p1-answers-7" value="7" />
-        <label for="question-p1-answers-7">1)Subarctic Continental</label>
-    </div>
-      
-          <div>
-        <input type="checkbox" name="q-p1-8" id="question-p1-answers-8" value="8" />
-        <label for="question-p1-answers-8">8)Mediterranian</label>
-    </div>
-          <div>
-        <input type="checkbox" name="q-p1-9" id="question-p1-answers-9" value="9" />
-        <label for="question-p1-answers-9">9)Oceanic</label>
-    </div>     
-      <div>
-        <input type="checkbox" name="q-p1-10" id="question-p1-answers-10" value="10" />
-        <label for="question-p1-answers-10">10)Humid Subtropical</label>
-    </div>
-            <div>
-        <input type="checkbox" name="q-p1-11" id="question-p1-answers-11" value="11" />
-        <label for="question-p1-answers-11">11)Cold Desert</label>
-    </div>
-          <div>
-        <input type="checkbox" name="q-p1-12" id="question-p1-answers-12" value="12" />
-        <label for="question-p1-answers-12">12)Cold Steppe</label>
-    </div>
-    
-          <div>
-        <input type="checkbox" name="q-p1-13" id="question-p1-answers-13" value="13" />
-        <label for="question-p1-answers-13">13)Polar Tundra</label>
-    </div>    
-      <div>
-        <input type="checkbox" name="q-p1-14" id="question-p1-answers-14" value="14" />
-        <label for="question-p1-answers-14">14)Polar Ice Cap </label>
-    </div>
-            <div>
-        <input type="checkbox" name="q-p1-15" id="question-p1-answers-15" value="15" />
-        <label for="question-p1-answers-15">15)Mixed Biome, Nomadic, Other</label>
-    </div>
+    <li><h3>Name of Exact Place</h3>
+	<input type="text"  id="set"><br>
+	</li>
+	 <li><h3>Name of Country/Civilization</h3>
+	<input type="text"  id="country"><br>
+	</li>
+	
+      	<li><h3>Biome</h3>
+      <input type="radio" name="bio" id="Rainforest" value="1">Tropical Rainforest<br>
+	  <input type="radio" name="bio" id="Monsoon" value="2">Monsoon<br>
+	  <input type="radio" name="bio" id="Savannah" value="3">Savannah<br>
+	  <input type="radio" name="bio" id="HDesert" value="4">Hot Desert<br>
+	  <input type="radio" name="bio" id="HSteppe" value="5">Hot Steppe<br>
+	  <input type="radio" name="bio" id="HContinental" value="6">Humid Continental<br>
+	  <input type="radio" name="bio" id="SContinental" value="7">Subarctic Continental<br>
+      <input type="radio" name="bio" id="Mediterranian" value="8">Mediterranian<br>
+	  <input type="radio" name="bio" id="Oceanic" value="9">Oceanic<br>
+	<input type="radio" name="bio" id="HSubtropical" value="10">Humid Subtropical<br>
+	<input type="radio" name="bio" id="CDesert" value="11">Cold Desert<br>
+	<input type="radio" name="bio" id="CSteppe" value="12">Cold Steppe<br>
+	<input type="radio" name="bio" id="Tundra" value="13">Polar Tundra<br>
+	<input type="radio" name="bio" id="Polar" value="14">Polar Ice Cap <br>
+	<input type="radio" name="bio" id="Other5" value="15">Other<br>
     </li>
-<h2>Time</h2>
-    <li><h3>
-      <div>
-        <input type="radio" name="q-t1-1" id="question-t1-answers-1" value="1" />
-        <label for="question-t1-answers-1">Yes</label>
-    </div>
-          <div>
-        <input type="radio" name="q-t1-2" id="question-t1-answers-2" value="2" />
-        <label for="question-t1-answers-2">No</label>
-      </li>
+
+
+	<li><h3>Government</h3>
+	<input type="radio" name="Government" id="ruler" value="1">King/Queen<br>
+	<input type="radio" name="Government" id="tyrant" value="2">Emperor/Emperess<br>
+	<input type="radio" name="Government" id="elected" value="3">Elected Official<br>
+	<input type="radio" name="Government" id="church" value="4">Church Officials<br>
+	<input type="radio" name="Government" id="council" value="5">Council<br>
+	<input type="radio" name="Government" id="combo" value="6">Combination<br>
+	</li>
+<li><h3>Military and/or Legal Force</h3>
+	<input type="checkbox" name="ml" id="guard" value="1">Guard<br>
+	<input type="checkbox" name="ml" id="police" value="2">Police<br>
+	<input type="checkbox" name="ml" id="volunteer" value="3">Volunteer Army<br>
+	<input type="checkbox" name="ml" id="army" value="4">Standing Army<br>
+	<input type="checkbox" name="ml" id="walls" value="5">Great Walls and Defences<br>
+	<input type="checkbox" name="ml" id="moral" value="6">Strong Moral Character<br>
+	<input type="checkbox" name="ml" id="navy" value="7">Navy<br>
+	<input type="checkbox" name="ml" id="airforce" value="8">Air Force<br>
+	<input type="checkbox" name="ml" id="special" value="9">Special Forces and Heroes<br>
+	
+	</li>
+	<li><h3>Cultural and Financial Influencers</h3>
+	<input type="checkbox" name="cul" id="mil" value="1">Military<br>
+	<input type="checkbox" name="cul" id="craft" value="2">Craftspeople<br>
+	<input type="checkbox" name="cul" id="nob" value="3">Nobility<br>
+	<input type="checkbox" name="cul" id="religious" value="4">Religious<br>
+	<input type="checkbox" name="cul" id="sale" value="5">Mercantile<br>
+	<input type="checkbox" name="cul" id="earthwork" value="6">Farmers, Miners, etc.<br>
+	
+	</li>
+	
+	</li>
+	<li><h3>Religion</h3>
+	<input type="radio" name="Religion" id="state" value="1">State Mandated<br>
+	<input type="radio" name="Religion" id="fmr" value="2">Free Multiple Religions<br>
+	<input type="radio" name="Religion" id="om" value="3">Organized multiplicity<br>
+	<input type="radio" name="Religion" id="mystery" value="4">Mystery<br>
+	<input type="radio" name="Religion" id="rig" value="5">Ruler Is God<br>
+	</li>
+	<li><h3>Religious Leader</h3> 
+	<input type="radio" name="RLeader" id="local" value="2">Local Priest/Rabbi/Prophet Etc.<br>
+	<input type="radio" name="RLeader" id="distant" value="3">Distant Priest/Rabbi/Prophet Etc.<br>
+	<input type="radio" name="RLeader" id="incarnate" value="4">Incarnation of Subject of Worship<br>
+	<input type="radio" name="RLeader" id="oracle" value="5">Oracle<br>
+	<input type="radio" name="RLeader" id="nolead" value="6">None<br>
+	
+	</li>
+	
+	<li><h3>Rituals</h3>
+	<input type="checkbox" name="rit" id="bsacrifice" value="1">Blood Sacrifice<br>
+	<input type="checkbox" name="rit" id="ssacrifice" value="2">Symbolic Sacrifice<br>
+	<input type="checkbox" name="rit" id="ells" value="3">Smells, Bells, and Spells<br>
+	<input type="checkbox" name="rit" id="mgprayers" value="4">Major Group Prayers<br>
+	<input type="checkbox" name="rit" id="irituals" value="5">Individual Rituals<br>
+	
+	
+	</li>
+	<li>  <h3>Economic Factors</h3><br>
+	<label for = "mexport">Main Export</label>
+			<input type="text"  id="mexport"><br>
+  <label for = "mimport">Main Import</label>
+			<input type="text"  id="mimport"><br></li>
+	
+			
+			
+	<li><h3>Social Centers</h3>
+	<input type="checkbox" name="socialhub" id="house" value="house">Homes<br>
+	<input type="checkbox" name="socialhub" id="inn" value="inn">Inn<br>
+	<input type="checkbox" name="socialhub" id="outdoor" value="out">Outdoor Meetup<br>
+	<input type="checkbox" name="socialhub" id="school" value="schl">School or Guild<br>
+	</li> 
+	
+<li><h3>Holidays</h3>
+	<input type="checkbox" name="holidatesone" id="midwinter" value="1">Midwinter<br>
+	<input type="checkbox" name="holidatestwo" id="midsummer" value="2">Midsummer<br>
+	<input type="checkbox" name="holidatesthree" id="spring" value="3">Spring<br>
+	<input type="checkbox" name="holidatesfour" id="autumn" value="4">Autumn<br>
+	<input type="checkbox" name="holidatesfive" id="float" value="5">Floating<br>
+	</li>
+	
+	<li><h3>Landmark</h3>
+	<input type="radio" name="manmade" id="manmake" value="1">Manmade Monument, Statue, Building, etc.<br>
+	<input type="radio" name="natural" id="natural" value="2">Natural Landscape Marker<br>
+	</li>
+	</ol>
+	
+	
+		<ol>
+<h2>A Time to Be</h2>	
+<li><h3 id= "pets">Is There Animal Husbandry?</h3>
+
+<input type="radio" name="AH" id="YesPets" value="yespets" checked = "checked">Yes</input>
+
+<input type="radio" name="AH" id="NoPets" value="nopets">No</input></li>
+
+   <li><h3>What Tools Exist?</h3>
+      
+       <input type="radio" name="tools" id="swood" value="stone" checked = "checked">Stone/Wood<br>
+       <input type="radio" name="tools" id="copper" value="copper">Copper<br>
+	     <input type="radio" name="tools" id="bronze" value="bronze">Bronze<br>
+	     <input type="radio" name="tools" id="iron" value="iron">Iron<br>
+		 <input type="radio" name="tools" id="steel" value="steel">Steel<br>
+	     <input type="radio" name="tools" id="electric" value="electric">electric<br>
+		 
+		 </li>
+
+
+		   <li><h3>Permanant Settlements?</h3>
+	   <input type="radio" name="settlements" id="nomad" value="none" checked = "checked">None<br>
+	   <input type="radio" name="settlements" id="farm" value="agriculture">Agriculture<br>
+	   <input type="radio" name="settlements" id="citystate" value="city-state">City State<br>
+	   <input type="radio" name="settlements" id="roads" value="roads">Road Systems<br>
+	   <input type="radio" name="settlements" id="arches" value="arches">Arches<br>
+	   <input type="radio" name="settlements" id="pipe" value="engineered">Mills, Piping, Plumbing<br>
+	   <input type="radio" name="settlements" id="national" value="ce">Countries and Empires<br>
+	   <input type="radio" name="settlements" id="coin" value="coin">Metal Coinage<br>
+	   <input type="radio" name="settlements" id="industry" value="industrial">Industrial<br>
+	   
+
+	  	  <li><h3>Art and Writing?</h3>
+		  <input type="radio" name="art" id="paint" value="paint" checked = "checked">Paint<br>
+		  <input type="radio" name="art" id="dye" value="dye">Dyes<br>
+		  <input type="radio" name="art" id="writing" value="writing">Writing<br>
+		  <input type="radio" name="art" id="pot" value="pottery">Pottery<br>
+		  <input type="radio" name="art" id="monument" value="monuments">Monuments<br>
+		  <input type="radio" name="art" id="paper" value="paper">Paper<br>
+		  <input type="radio" name="art" id="glass" value="glass">Glass<br>
+		  <input type="radio" name="art" id="porcelain" value="porcelain">Porcelain<br>
+		  <input type="radio" name="art" id="bprint" value="block-printing">Block Printing<br>
+		  <input type="radio" name="art" id="mtype" value="type-printing">Moveable Type Printing<br>
+		  <input type="radio" name="art" id="techdraw" value="technical-drawing">Technical Drawing<br>
+		  <input type="radio" name="art" id="film" value="film">Film<br>
+		  <input type="radio" name="art" id="tv" value="television">Television<br>
+		  <input type="radio" name="art" id="digital" value="digital">Digital<br>
+		  
+		  
+
+		  <li><h3>Clothing?</h3>
+	  <input type="radio" name="clothing" id="leather" value="leather" checked = "checked">Leather<br>
+	  <input type="radio" name="clothing" id="sweave" value="woven">Simple Weave<br>
+	  <input type="radio" name="clothing" id="cweave" value="complexw">Complex Weave<br>
+	  <input type="radio" name="clothing" id="cutsew" value="cutsew">Cut and Sew<br>
+	  <input type="radio" name="clothing" id="fashion" value="fashion">Fashion Industry<br>
+	  </li>
+	  
+	  <li><h3>Math?</h3>
+		 <input type="radio" name="math" id="numbers" value="counting" checked = "checked">Simple Accounting<br>
+		 <input type="radio" name="math" id="divy" value="fd">Fractions and Decimals<br>
+		 <input type="radio" name="math" id="geomety" value="geomety">Geometry<br>
+		 <input type="radio" name="math" id="logic" value="logic">Logic<br>
+		 <input type="radio" name="math" id="engineer" value="engineering">Engineering<br>
+		 <input type="radio" name="math" id="stat" value="statistics">Statistics<br>
+		 <input type="radio" name="math" id="phys" value="physics">Physics<br>
+		
+		
+	  </li>
+	  <li><h3>Are Any Of These Magical or Sci-fi?</h3>
+		<input type="checkbox" name="magic" id="toolmagic" value="magic">Tools<br>
+		<input type="checkbox" name="magic" id="scifi" value="diplomacy">Multiple Worlds<br>
+		<input type="checkbox" name="magic" id="artmagic" value="magic">Art and Writing<br>
+		<input type="checkbox" name="magic" id="clothmagic" value="magic">Clothing<br>
+	   <input type="checkbox" name="magic" id="spec" value="speculative">Speculative Math<br>
+	  </li>
+
+	  
+
+		  
+		  
     </ol>
-  </form>
-  <div class="click">
-<input type="submit" value="Submit Quiz" />
-<footer class="foot">
+
+
+
+   <button onclick="tellStory()" type="button">World Build</button>
+
+
+     </fieldset>
+   </form>
+  
+  <div id = "output">
+  
+  </div>
+
+<footer class="footer">
 &copy; Copyright 2020
 </footer>
-</div>
+
 
 </body>
 
