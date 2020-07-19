@@ -683,6 +683,7 @@ var set = document.getElementById("set");
 	output.innerHTML = story;
 	
 	
+	
   
 
  //Issues with setting
