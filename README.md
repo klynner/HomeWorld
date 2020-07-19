@@ -1,2 +1,61 @@
-# HomeWorld
-Final Project ENGH 375 GMU
+<!doctype html>
+
+<html lang+"en">
+<head>
+<meta charset="utf-8">
+<title>WorldBuilding Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+<div class="container">
+<nav>
+<h1 class="logo"><a href="WBindex.html">HomeWorld Generator</a></h1>
+
+<ul>
+<li><a href="Place and Time.html">Place and Time</a></li>
+<li><a href="Constructed Language.html">Constructed Language</a></li>
+<li><a href="Basic Pantheon and Myths.html">Basic Pantheon and Myths</a></li>
+<li><a href="Other Advising.html">Other Advising</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<body>
+<div id="page">
+<article>
+<p>The world is complicated.</p>
+&nbsp;
+<p>Fictional worlds are no less complicated, we merely see less of them. However, unless you are the next coming of 
+J. R. R. Tolkien, falling down the hobbit hole to discover the full personal history of every tree, rock, and random woodsman, you 
+probably would prefer a simpler task.
+</p> 
+<p>Languages are only simpler by comparison, and contain several steps. Most of those steps are for linguists and
+are generally irrelevant to the average writer. The book is not going to be written in that language after all, nobody would read it.
+Significantly easier is the surface level worldbuilding provided by this site.</p>
+<p>This site provides, on surface level, the illusion of depth. 
+The thing about illusions though, is that once you can see it, you can describe it. You can write it.</p>
+<p>This site is not for character creation, unless the characters you seek are very simply godly archetypes.</p>
+<p>This site is not for complete language creation, which will take a great deal of work on your end.</p>
+<p>This site cannot and will not assist with plot, detailing, or other specifics, except in those illusions of depth.</p>
+<p>Most importantly, you will have to make choices. These are up to you, and very important. You can make any choice you like.
+You can choose any ridiculous rule that suits your work. </p>
+&nbsp;
+&nbsp;
+<p>Welcome Weary Traveler. Today we shall attend the portals to the worlds in your heart.</p>
+&nbsp;
+</article>
+
+
+
+<footer>
+<div class="footer"> &copy; Copyright 2020
+</div>
+</footer>
+</div>
+
+</body>
+
+
+</html>
