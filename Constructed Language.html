@@ -1,8 +1,12 @@
+<!doctype html>
+
+<html lang+"en">
+<head>
 <meta charset="utf-8">
 <title>WorldBuilding Generator</title>
 <link rel="stylesheet" href="style.css">
+<script src="javalang"></script>
 </head>
-
 <header>
 <div class="container">
 <nav>
@@ -19,7 +23,142 @@
 </header>
 
 <body class="body">
-class="quiz"
+<h1>Sounds</h1>
+
+<table id = "vowels">
+<tr>
+<th><h2>Vowels</h2></th> <th>Front 1</th> <th>Front 2</th> <th>Near-Front 1</th> 
+<th>Near-Front 2</th> <th>Central 1</th> <th>Central 2</th> <th>Near-Back 1</th>
+<th>Near-Back 2</th> <th>Back 1</th> <th>Back 2</th> </tr>
+<tr>
+<th>Close</th>
+<td>i</td> <td>y</td> <td> </td> <td> </td> <td>ɨ</td> 
+<td>ʉ</td> <td> </td> <td> </td> <td>ɯ</td> <td>u</td>
+</tr>
+<tr>
+<th>Near-Close</th>
+<td> </td> <td> </td> <td>ɪ</td> <td>ʏ</td> <td> </td>
+<td> </td> <td> </td> <td>ʊ</td> <td> </td> <td> </td>
+</tr>
+<tr>
+<th>Close-Mid</th>
+<td> </td> <td>e</td> <td>ø</td> <td> </td> <td>ɘ</td>
+<td> </td> <td>ɵ</td> <td> </td> <td>ɤ</td> <td>o</td>
+</tr>
+<tr>
+<th>Mid</th>
+<td> </td> <td> </td> <td> </td> <td> </td> <td> </td> 
+<td>ə</td> <td> </td> <td> </td> <td> </td> <td> </td>
+</tr>
+<tr>
+<th>Open-Mid</th>
+<td> </td> <td> </td> <td> </td> <td>ɛ</td> <td> </td>
+<td>œ</td> <td>ɜ</td> <td>ɞ</td> <td>ʌ</td> <td>ɔ</td>
+</tr>
+<tr>
+<th>Near-Open</th>
+<td> </td> <td> </td> <td> </td> <td>æ</td> <td> </td>
+<td> </td> <td>ɐ</td> <td> </td> <td> </td> <td> </td>
+</tr>
+<tr>
+<th>Open</th>
+<td> </td> <td> </td> <td> </td> <td> </td> <td>a</td>
+<td> </td> <td>ä</td> <td> </td> <td>ɑ</td> <td>ɒ</td>
+</tr>
+
+</table><br>
+<table id="consonants">
+<tr>
+<th><h2>Pulmonic Consonants</h2></th>
+<th>Unvoiced Bilabial</th> <th>Voiced Bilabial</th>
+<th>Unvoiced Labiodental</th> <th>Voiced Labiodental</th>
+<th>Unvoiced Dental</th> <th>Voiced Dental</th>
+<th>Unvoiced Alveolar</th><th>Voiced Alveolar</th>
+<th>Unvoiced Post Alveolar</th><th>Voiced Post Alveolar</th>
+<th>Unvoiced Retroflex</th><th>Voiced Retroflex</th>
+<th>Unvoiced Palatal</th><th>Voiced Palatal</th>
+<th>Unvoiced Velar</th><th>Voiced Velar</th>
+<th>Unvoiced Uvular</th><th>Voiced Uvular</th>
+<th>Unvoiced Pharyngeal</th><th>Voiced Pharyngeal</th>
+<th>Unvoiced Glottal</th><th>Voiced Glottal</th>
+</tr>
+<tr>
+<th>Plosive</th>
+<td>p</td> <td>b</td> <td> </td> <td> </td> <td> </td> <td> </td> <td>t</td>
+<td>d</td> <td> </td> <td> </td> <td>ʈ</td> <td>ɖ</td> <td>c</td> <td>ɟ</td>
+<td>k</td> <td>g</td> <td>q</td> <td>ɢ</td> <td> </td> <td>N/A</td> <td>ʔ</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>Nasal</th>
+<td> </td> <td>m</td> <td> </td> <td>ɱ</td> <td> </td> <td> </td> <td> </td>
+<td>n</td> <td> </td> <td> </td> <td> </td> <td>ɳ</td> <td> </td> <td>ɲ</td>
+<td> </td> <td>ŋ</td> <td> </td> <td>ɴ</td> <td>N/A</td> <td>N/A</td> <td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>Trill</th>
+<td> </td> <td>ʙ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
+<td>r</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
+<td>N/A</td> <td>N/A</td> <td> </td> <td>ʀ</td> <td> </td> <td> </td> <td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>Tap or Flap</th>
+<td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
+<td>ɾ</td> <td> </td> <td> </td> <td> </td> <td>ɽ</td> <td> </td> <td> </td>
+<td>N/A</td> <td>N/A</td> <td> </td> <td> </td> <td> </td> <td> </td> <td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>Fricative</th>
+<td>ɸ</td> <td>β</td> <td>f</td> <td>v</td> <td>θ</td> <td>ð</td> <td>s</td>
+<td>z</td> <td>ʃ</td> <td>ʒ</td> <td>ʂ</td> <td>ʐ</td> <td>ç</td> <td>ʝ</td>
+<td>x</td> <td>ɣ</td> <td>χ</td> <td>ʁ</td> <td>ħ</td> <td>ʕ</td> <td>h</td>
+<td>ɦ</td>
+</tr>
+<tr>
+<th>Lateral Fricative</th>
+<td>N/A</td> <td>N/A</td> <td>N/A</td> <td>N/A</td> <td> </td> <td> </td> <td>ɬ</td>
+<td>ɮ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
+<td></td> <td> </td> <td> </td> <td> </td> <td>N/A</td> <td>N/A</td> <td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>Approximant</th>
+<td> </td> <td> </td> <td> </td> <td>ʋ</td> <td> </td> <td> </td> <td> </td>
+<td>ɹ</td> <td> </td> <td> </td> <td> </td> <td>ɻ</td> <td> </td> <td>j</td>
+<td> </td> <td>ɰ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<th>Lateral Approximant</th>
+<td>N/A</td> <td>N/A</td> <td>N/A</td> <td>N/A</td> <td> </td> <td> </td> <td>ɬ</td>
+<td>ɮ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
+<td> </td> <td> </td> <td> </td> <td></td> <td>N/A</td> <td>N/A</td> <td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+
+
+
+
+
+
+</table><br>
+<textarea name="IPA" id="consound" rows="1" onKeyUp="transcrire()"  class="cadr"></textarea>
+<br>
+
+
+
+
+
+
+
+
 
 <footer>
 <div class="footer"> &copy; Copyright 2020
