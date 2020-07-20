@@ -45,39 +45,39 @@ This is to show you the types of myths available.</p>
 	  <input type="radio" name="creation" id="sorder" value="sorder">Social Order Creations<br>
 </li>
 <li><h3>Floods</h3>
-	  <input type="radio" name="floods" id="y" value="y">World Flooded<br>
+	  <input type="radio" name="floods" id="y" value="y" checked = "checked">World Flooded<br>
 	  <input type="radio" name="floods" id="n" value="n">World Has Not Flooded(Yet)<br>
 	 </li>
 <li><h3>Tricksters</h3>
-	  <input type="radio" name="trick" id="important" value="">Are Leaders and/or Important<br>
-	  <input type="radio" name="trick" id="underdog" value="">Are Underdog Tales<br>
-	  <input type="radio" name="trick" id="oops" value="">Are The Cause of Their Own Misfortune To Teach Lessons<br>
-	  <input type="radio" name="trick" id="all" value="">All of the Above<br>
+	  <input type="radio" name="trick" id="important" value="important" checked = "checked">Are Leaders and/or Important<br>
+	  <input type="radio" name="trick" id="underdog" value="underdog">Are Underdog Tales<br>
+	  <input type="radio" name="trick" id="oops" value="oops">Are The Cause of Their Own Misfortune To Teach Lessons<br>
+	  <input type="radio" name="trick" id="all" value="all">All of the Above<br>
 
 </li>
 <li><h3>The End</h3>
-	  <input type="radio" name="end" id="hah" value="">Has Already Happened<br>
-	  <input type="radio" name="end" id="distant" value="">Is In A Distant Future And Mostly Irrelevant<br>
-	  <input type="radio" name="end" id="desired" value="">Is Desired By The Gods<br>
-	  <input type="radio" name="end" id="looming" value="">Is a Looming Threat<br>
+	  <input type="radio" name="end" id="hah" value="hah" checked = "checked">Has Already Happened<br>
+	  <input type="radio" name="end" id="distant" value="distant">Is In A Distant Future And Mostly Irrelevant<br>
+	  <input type="radio" name="end" id="desired" value="desired">Is Desired By The Gods<br>
+	  <input type="radio" name="end" id="looming" value="looming">Is a Looming Threat<br>
 	  </li>
 <li><h3>Epic Places</h3>
-	  <input type="radio" name="place" id="sland" value="">Small Landmark<br>
-	  <input type="radio" name="place" id="city" value="">City<br>
-	  <input type="radio" name="place" id="tree" value="">Tree<br>
-	  <input type="radio" name="place" id="mountain" value="">Mountain<br>
+	  <input type="radio" name="place" id="sland" value="sland" checked = "checked">Small Landmark<br>
+	  <input type="radio" name="place" id="city" value="city">City<br>
+	  <input type="radio" name="place" id="tree" value="tree">Tree<br>
+	  <input type="radio" name="place" id="mountain" value="mountain">Mountain<br>
 	  </li>
 <li><h3>Epic Heroes</h3>
-	  <input type="radio" name="hero" id="role" value="">Role Model<br>
-	  <input type="radio" name="hero" id="warning" value="">Warning Against Something<br>
-	  <input type="radio" name="hero" id="learning" value="">Hero Learns Something<br>
-	  <input type="radio" name="hero" id="becoming" value="">Basically A God/Becomes A God<br>
+	  <input type="radio" name="hero" id="role" value="role" checked = "checked">Role Model<br>
+	  <input type="radio" name="hero" id="warning" value="warning">Warning Against Something<br>
+	  <input type="radio" name="hero" id="learning" value="learning">Hero Learns Something<br>
+	  <input type="radio" name="hero" id="becoming" value="becoming">Basically A God/Becomes A God<br>
 	  </li>
 <li><h3>Monsters</h3>
-	  <input type="radio" name="monster" id="horse" value="">Mythical Horses<br>
-	  <input type="radio" name="monster" id="serpent" value="">Serpents and Dragons<br>
-	  <input type="radio" name="monster" id="human" value="">Human Monsters<br>
-	  <input type="radio" name="monster" id="combo" value="">Combinatory Creatures<br>
+	  <input type="radio" name="monster" id="horse" value="horse" checked = "checked">Mythical Horses<br>
+	  <input type="radio" name="monster" id="serpent" value="serpent">Serpents and Dragons<br>
+	  <input type="radio" name="monster" id="human" value="human">Human Monsters<br>
+	  <input type="radio" name="monster" id="combo" value="combo">Combinatory Creatures<br>
 	  </li>
 	  </ol>
 <button onclick="tellStory()" type="button">Bring Forth Myths</button>
@@ -116,11 +116,11 @@ if (document.getElementById("void").checked){
 if (document.getElementById("y").checked){
 		floods = floods + 1;
 	}
-	if (document.getElementById("n").checked){
+	else (document.getElementById("n").checked){
 		floods = floods + 2;
 	}
 if floods == 1 {flood = "The World Flooded Once.";}
-else {flood = "Their World Has Always Been Like This";}
+else {flood = "The World Has Always Been Like This";}
 
 if (document.getElementById("important").checked){
 		trick = trick + 1;
