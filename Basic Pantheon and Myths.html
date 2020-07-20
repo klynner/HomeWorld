@@ -91,7 +91,7 @@ var end = 0;
 var place = 0;
 var hero = 0;
 var monster = 0;
-//
+
 if (document.getElementById("void").checked){
 		creation = creation + 1;
 	}
@@ -112,7 +112,7 @@ if (document.getElementById("void").checked){
 	else if creation == 3{create = "From the Endless Ocean";}
 	else if creation == 4{create = "From Mother Earth";}
 	else if creation == 5{create = "From the Forms and Traditions of the Gods come our traditions and";}
-//
+
 if (document.getElementById("y").checked){
 		floods = floods + 1;
 	}
@@ -121,7 +121,7 @@ if (document.getElementById("y").checked){
 	}
 if floods == 1 {flood = "The World Flooded Once.";}
 else {flood = "Their World Has Always Been Like This";}
-//
+
 if (document.getElementById("important").checked){
 		trick = trick + 1;
 	}
@@ -138,7 +138,7 @@ if trick == 1{tri = "clever like our trickster(s)";}
 else if trick == 2{tri = "as smart as [insert name], small god(ess) of tricks and traps.";}
 else if trick == 3{tri = "smarter than the trickster god who has done many foolish things and now looks strange because of them.";}
 else if trick == 4{tri = "as clever as the trickster(s) or better, that you may not catch yourself in your tricks.";}
-//
+
 if (document.getElementById("hah").checked){
 		end = end + 1;
 	}
@@ -155,7 +155,7 @@ if (document.getElementById("hah").checked){
 	else if end == 2{ending = " The world will end someday, probably poetically in the tradition of our prophets.";}
 	else if end == 3{ending = " The Gods have worked hard toward the End Of All and will destroy everything in their path.";}
 	else if end == 4{ending = " The End is near and we await it with anxiety.";}
-//
+
 if (document.getElementById("sland").checked){
 		place = place + 1;
 	}
@@ -172,7 +172,7 @@ if (document.getElementById("sland").checked){
 	if place == 2{placed = "the City of Gods/Heroes is a glorious place.";}
 	if place == 3{placed = "the World Tree beckons us to hear its story.";}
 	if place == 4{placed = "the gods can be found on the Great Mountain.";}
-//
+
 if (document.getElementById("role").checked){
 		hero = hero + 1;
 	}
@@ -189,7 +189,7 @@ if (document.getElementById("role").checked){
 	if hero == 2{heroes = " Listen to stories of hero(s), and take warning from their plight.";}
 	if hero == 3{heroes = " Witness the lessons of the Gods, taught to our hero(s).";}
 	if hero == 4{heroes = " Worship for the hero(s) of this place have become God(s).";}
-	//
+
 	if (document.getElementById("horse").checked){
 		monster = monster + 1;
 	}
@@ -206,13 +206,11 @@ if (document.getElementById("role").checked){
 	if monster == 2{mon = "has fought many monstrous serpents and beasts.";}
 	if monster == 3{mon = "remains locked in battle with the cruel nature of humantiy.";}
 	if monster == 4{mon = "often witnesses the great and strange creatures of this place like the legendary half human (Hag, Centaur, Gorgon, You know the drill).";}
-	//
+
 
 output.innerHTML = story;
 
-var story = create + "comes the world." + flood + "Learn To Be " + tri
-+ ending + " Until that becomes a problem, " + placed + heroes +  " The Hero(ine) " 
-+ mon;
+var story = create + "comes the world." + flood + "Learn To Be " + tri + ending + " Until that becomes a problem, " + placed + heroes +  " The Hero(ine) " + mon;
 }
 </script>
 <br>
