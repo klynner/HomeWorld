@@ -1,6 +1,11 @@
+<!doctype html>
+
+<html lang+"en">
+<head>
 <meta charset="utf-8">
 <title>WorldBuilding Generator</title>
 <link rel="stylesheet" href="style.css">
+<script src="javalang.js"></script>
 </head>
 
 <header>
@@ -19,8 +24,210 @@
 </header>
 
 <body class="body">
- class="quiz"
+<article><p>The Myths and Panthons of created worlds are often an afterthought.
+This can be a major problem as religion is usually the center of a culture morally, habitually, and traditionally.
+While this is true, religion is also treated more casually than a modern reader or player tends to realize.
+Even Tolkien told us how religion is so tied to culture it shows up in the language.</p>
+&nbsp;
+<p>For this generator, the gods will not be named, that is the job of the language generator.
+This is to show you the types of myths available.</p>
+</article>
 
+
+ <form action="write" id="myths">
+  <fieldset>
+<ol><h2>Pantheon</h2>
+<li><h3>Creation</h3>
+<input type="radio" name="creation" id="void" value="void" checked = "checked">Creation From the void<br>
+	  <input type="radio" name="creation" id="sex" value="sex">Eggs, Seeds, and other Inuendos<br>
+	  <input type="radio" name="creation" id="water" value="water">From the Great Sea<br>
+	  <input type="radio" name="creation" id="mearth" value="mearth">Mother Earth and Her Children<br>
+	  <input type="radio" name="creation" id="sorder" value="sorder">Social Order Creations<br>
+</li>
+<li><h3>Floods</h3>
+	  <input type="radio" name="floods" id="y" value="y">World Flooded<br>
+	  <input type="radio" name="floods" id="n" value="n">World Has Not Flooded(Yet)<br>
+	 </li>
+<li><h3>Tricksters</h3>
+	  <input type="radio" name="trick" id="important" value="">Are Leaders and/or Important<br>
+	  <input type="radio" name="trick" id="underdog" value="">Are Underdog Tales<br>
+	  <input type="radio" name="trick" id="oops" value="">Are The Cause of Their Own Misfortune To Teach Lessons<br>
+	  <input type="radio" name="trick" id="all" value="">All of the Above<br>
+
+</li>
+<li><h3>The End</h3>
+	  <input type="radio" name="end" id="hah" value="">Has Already Happened<br>
+	  <input type="radio" name="end" id="distant" value="">Is In A Distant Future And Mostly Irrelevant<br>
+	  <input type="radio" name="end" id="desired" value="">Is Desired By The Gods<br>
+	  <input type="radio" name="end" id="looming" value="">Is a Looming Threat<br>
+	  </li>
+<li><h3>Epic Places</h3>
+	  <input type="radio" name="place" id="sland" value="">Small Landmark<br>
+	  <input type="radio" name="place" id="city" value="">City<br>
+	  <input type="radio" name="place" id="tree" value="">Tree<br>
+	  <input type="radio" name="place" id="mountain" value="">Mountain<br>
+	  </li>
+<li><h3>Epic Heroes</h3>
+	  <input type="radio" name="hero" id="role" value="">Role Model<br>
+	  <input type="radio" name="hero" id="warning" value="">Warning Against Something<br>
+	  <input type="radio" name="hero" id="learning" value="">Hero Learns Something<br>
+	  <input type="radio" name="hero" id="becoming" value="">Basically A God/Becomes A God<br>
+	  </li>
+<li><h3>Monsters</h3>
+	  <input type="radio" name="monster" id="horse" value="">Mythical Horses<br>
+	  <input type="radio" name="monster" id="serpent" value="">Serpents and Dragons<br>
+	  <input type="radio" name="monster" id="human" value="">Human Monsters<br>
+	  <input type="radio" name="monster" id="combo" value="">Combinatory Creatures<br>
+	  </li>
+	  </ol>
+<button onclick="tellStory()" type="button">Bring Forth Myths</button>
+<br>
+<script>
+function tellStory(){
+var creation = 0;
+var floods = 0;
+var trick = 0;
+var end = 0;
+var place = 0;
+var hero = 0;
+var monster = 0;
+//
+if (document.getElementById("void").checked){
+		creation = creation + 1;
+	}
+	if (document.getElementById("sex").checked){
+		creation = creation + 2;
+	}
+    if (document.getElementById("water").checked){
+		creation = creation + 3;
+	}
+	if (document.getElementById("mearth").checked){
+		creation = creation + 4;
+	}
+	if (document.getElementById("sorder").checked){
+		creation = creation + 5;
+	}
+	if creation == 1{create = "From the Endless Void";}
+	else if creation == 2{create = "From the Planting and Harvest of the Gods";}
+	else if creation == 3{create = "From the Endless Ocean";}
+	else if creation == 4{create = "From Mother Earth";}
+	else if creation == 5{create = "From the Forms and Traditions of the Gods come our traditions and";}
+//
+if (document.getElementById("y").checked){
+		floods = floods + 1;
+	}
+	if (document.getElementById("n").checked){
+		floods = floods + 2;
+	}
+if floods == 1 {flood = "The World Flooded Once.";}
+else {flood = "Their World Has Always Been Like This";}
+//
+if (document.getElementById("important").checked){
+		trick = trick + 1;
+	}
+	if (document.getElementById("underdog").checked){
+		trick = trick + 2;
+	}
+    if (document.getElementById("oops").checked){
+		trick = trick + 3;
+	}
+	if (document.getElementById("all").checked){
+		trick = trick + 4;
+	}
+if trick == 1{tri = "clever like our trickster(s)";}
+else if trick == 2{tri = "as smart as [insert name], small god(ess) of tricks and traps.";}
+else if trick == 3{tri = "smarter than the trickster god who has done many foolish things and now looks strange because of them.";}
+else if trick == 4{tri = "as clever as the trickster(s) or better, that you may not catch yourself in your tricks.";}
+//
+if (document.getElementById("hah").checked){
+		end = end + 1;
+	}
+	if (document.getElementById("distant").checked){
+		end = end + 2;
+	}
+    if (document.getElementById("desired").checked){
+		end = end + 3;
+	}
+	if (document.getElementById("looming").checked){
+		end = end + 4;
+	}
+	if end == 1{ending = " Other worlds have come and gone.";}
+	else if end == 2{ending = " The world will end someday, probably poetically in the tradition of our prophets.";}
+	else if end == 3{ending = " The Gods have worked hard toward the End Of All and will destroy everything in their path.";}
+	else if end == 4{ending = " The End is near and we await it with anxiety.";}
+//
+if (document.getElementById("sland").checked){
+		place = place + 1;
+	}
+	if (document.getElementById("city").checked){
+		place = place + 2;
+	}
+    if (document.getElementById("tree").checked){
+		place = place + 3;
+	}
+	if (document.getElementById("mountain").checked){
+		place = place + 4;
+	}
+	if place == 1{placed = "the places of the gods are small. Witness the detail in these monuments";}
+	if place == 2{placed = "the City of Gods/Heroes is a glorious place.";}
+	if place == 3{placed = "the World Tree beckons us to hear its story.";}
+	if place == 4{placed = "the gods can be found on the Great Mountain.";}
+//
+if (document.getElementById("role").checked){
+		hero = hero + 1;
+	}
+	if (document.getElementById("warning").checked){
+		hero = hero + 2;
+	}
+    if (document.getElementById("learning").checked){
+		hero = hero + 3;
+	}
+	if (document.getElementById("becoming").checked){
+		hero = hero + 4;
+	}
+	if hero == 1{heroes = " Hear of our Hero(s) who have done great and socially desirable deeds.";}
+	if hero == 2{heroes = " Listen to stories of hero(s), and take warning from their plight.";}
+	if hero == 3{heroes = " Witness the lessons of the Gods, taught to our hero(s).";}
+	if hero == 4{heroes = " Worship for the hero(s) of this place have become God(s).";}
+	//
+	if (document.getElementById("horse").checked){
+		monster = monster + 1;
+	}
+	if (document.getElementById("serpent").checked){
+		monster = monster + 2;
+	}
+    if (document.getElementById("human").checked){
+		monster = monster + 3;
+	}
+	if (document.getElementById("combo").checked){
+		monster = monster + 4;
+	}
+	if monster == 1{mon = "has often ridden the famous magic horse (or horse-like creature, it probably flies).";}
+	if monster == 2{mon = "has fought many monstrous serpents and beasts.";}
+	if monster == 3{mon = "remains locked in battle with the cruel nature of humantiy.";}
+	if monster == 4{mon = "often witnesses the great and strange creatures of this place like the legendary half human (Hag, Centaur, Gorgon, You know the drill).";}
+	//
+
+output.innerHTML = story;
+
+var story = create + "comes the world." + flood + "Learn To Be " + tri
++ ending + " Until that becomes a problem, " + placed + heroes +  " The Hero(ine) " 
++ mon;
+}
+</script>
+<br>
+</fieldset>
+</form>
+  <div id = "output">
+  
+  </div><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 <footer>
 <div class="footer"> &copy; Copyright 2020
 </div>
