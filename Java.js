@@ -690,8 +690,8 @@ var set = document.getElementById("set");
   
  var story = "Welcome to " + propername + " in " + country + ". There are many great things to do here in the year " + year + 
  "! Watching over us are our " + govern + " with their " + force 
- + " Our people greatly value our " + leader
- + " Visit the " + religion + ", led by " + priest + ", to do " + ritual + "!" 
+ + ". Our people greatly value our " + leader
+ + " Visit the " + religion + ", led by " + priest + ", to learn " + ritual + "!" 
  + " Come by our markets where you can get " + propername + "’s famous " + mex + "!"
  + " Stay at our " + shelter + ", and try the local " + food
  + " Join us in wearing the local " + clothing 
