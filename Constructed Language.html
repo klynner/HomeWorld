@@ -1,172 +1,211 @@
-<!doctype html>
+<!DOCTYPE HTML>
 
-<html lang+"en">
-<head>
-<meta charset="utf-8">
-<title>WorldBuilding Generator</title>
-<link rel="stylesheet" href="style.css">
-<script src="javalang"></script>
+<html>
+	<head>
+		<title>Worldbuilding Generators</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+        <script src="javalang.js"></script>
 </head>
-<header>
+
+
+<body class="is-preload">
+
+		
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="wbindex.html">Homeworld</a></h1>
+					<p>Other Advice and Advisors</p>
+				</header>
+				<nav id="nav">
+				<ul>
+						<li><a href="#one" class="active">Sounds</a></li>
+						<li><a href="#two">Rules and Roots</a></li>
+						<li><a href="#three">Method</a></li>
+						<li><a href="Basic Pantheon and Myths.html">Basic Pantheon and Myths</a></li>
+						<li><a href="Place and Time.html">Place and Time</a></li>
+						<li><a href="Constructed Language.html">Constructed Language</a></li>
+						<li><a href="Other Advising.html">Other Advice</a></li>
+					</ul>
+					</nav>
+				
+			</section>
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+	<section id="one">
+<div class="image main" data-position="center">
+<img src="banner.jpg" alt="" />
+</div>
 <div class="container">
-<nav>
-<h1 class="logo"><a href="WBindex.html">HomeWorld Generator</a></h1>
-
+<h2>Sounds</h2><br>
 <ul>
-<li><a href="Place and Time.html">Place and Time</a></li>
-<li><a href="Constructed Language.html">Constructed Language</a></li>
-<li><a href="Basic Pantheon and Myths.html">Basic Pantheon and Myths</a></li>
-<li><a href="Other Advising.html">Other Advising</a></li>
+<li>
+<h3>Population</h3>
+<p>This starts with the population speaking the language. 
+Simple languages by single groups like nomads, city-states etc.
+are going to have fewer sounds in their languages.</p>
+<p>The smallest number of vowels in existing languages is 3, of consonants, 6. <br>
+The largest number of vowels is 7, of consonants, 25.</p>
+<input type="button" onclick="alert('3-4 Vowels, 7-11 Consonants')" value="Single Population"><br>
+<input type="button" onclick="alert('4-5 Vowels, 11-16 Consonants')" value="City State"><br>
+<input type="button" onclick="alert('5-6 Vowels, 16-21 Consonants')" value="Major Melting Pot"><br>
+<input type="button" onclick="alert('5-6 Vowels, 21-25 Consonants')" value="Multi Country"><br>
+
+<li><h3>Limitation</h3>
+<p>So you're wearing fangs or fake tusks for a costume. Notice anything?</p>
+<p>How about listening to creatures whose tongues are thin?</p>
+<p>Suffice to say, some sounds just aren't going to happen.</p><br>
+<input type="button" onclick="alert('No Bilabial Sounds, nothing that requires lips.')"value="Fangs, Tusks, or Lacking Lips"><br>
+<input type="button" onclick="alert('No Nasals or Plosives, nothing that involves totally closing off airflow.')"value="Thin Tongues and Hissy Fits"><br>
+<input type="button" onclick="alert('No Nasals. Embrace the sound of the common cold.')"value="No Noses"><br></li>
 </ul>
-</nav>
+
+<section id="two">
+<div class="container">
+<h3>Rules and Roots</h3>
+<ul>
+<li><p>First rule: KPTHFFBT often offends. </p>
+<p>Decide how many consonants are allowed to stand next to each other.</p>
+</li>
+<li>
+<p>Second Rule: If a language is Lingua Franca, a "Bridge Language" or "Trade Language,
+ it works best for the sounds of the bigger language to be taken from the "Bridged" language.</p>
+<p>Bonus points if the loaned sounds are attached to concepts relevant to the "Bridged" culture</p>
+<p>That is, if there is a mining culture, the sounds for "ore" "pick" etc. probably came from that culture</p>
+</li>
+<li>
+<p>Final Sound Rule: Don't use sounds you can't make, or sounds you can't recognize. 
+<br>Please. Do. Not.</p><br>
+<p>You will be asked to say it for your readers.</p>
+<p>If you really want to know <a href = "https://www.ipachart.com/" target="_blank">how it sounds</a></p></li>
+</ul>
+<h3>Affixes And Wierd Word Rules</h3>
+<ul>
+<li><p>In-word Rule 1: Words can be changed by Affixes.</p>
+<table style="width:80%">
+<tr><th>Prefix</th><td>Add to beginning</td><td>Un-, Anti-, Dis-, Etc.</td></tr>
+<tr><th>Infix</th><td>Add inside the word</td><td>Not in English except for profanity. Unbe-f******-lievable.</td></tr>
+<tr><th>Suffix</th><td>Add to end</td><td>-tion, -ity, -er, -ness, -ism, Etc.</td></tr>
+</table></li>
+<li><p>In-word Rule 2: Transitivity.</p>
+<p>Does the Verb require a Direct object. Ex; "I Run" is fine but "He Instilled" is missing something.</p>
+</p>
+<li><p>In-word Rule 3: Causatives.</p>
+<p>Are there second person verbs? For example: "I <strong>made</strong> him do it."</p>
+</li>
+<li><p>In-word Rule 4: Tenses</p>
+<p>Past, Present, and Future are simple but not the simplest.
+English requires extra words like "will do" to make future tense happen.</p>
+<p>Some languages need extra words for every tense, some languages have more than three tenses.</p></li>
+<li><p>In-word Rule 5:Manner</p>
+<p>This is where tense asks whether an action has been completed yet. 
+Your present and past Perfects, for example.</p>
+<p>Is there a way to tell if an action is complete?</p></li>
+<li><p>Plurals</p>
+<p>Plural Marker: -s or many, or lots of etc.</p>
+<p>Magic Number Specification When does counting turn into plural word? One, Two, Many, Too Many?</p>
+<p>No Plurals: number + noun, If the group is uncountably big, there will be a number that means uncountable like 40 or 77.</p></li>
+</ul>
+<h3>Other Grammar Rules</h3>
+<li>
+<ul>
+<li><p>Word Order</p></li>
+<li>No Order: Subjects, Verbs, and Objects etc are declared by Affixes.</li>
+<li>Subject-Verb-Object</li>
+<li>Subject-Object-Verb</li>
+<li>Verb-Subject-Object</li>
+<li>Verb-Object-Subject</li>
+<li>Object-Verb-Subject</li>
+<li>Object-Subject-Verb</li>
+</ul></li>
 </div>
-</header>
+</section>
 
-<body class="body">
-<h1>Sounds</h1>
-
-<table id = "vowels">
-<tr>
-<th><h2>Vowels</h2></th> <th>Front 1</th> <th>Front 2</th> <th>Near-Front 1</th> 
-<th>Near-Front 2</th> <th>Central 1</th> <th>Central 2</th> <th>Near-Back 1</th>
-<th>Near-Back 2</th> <th>Back 1</th> <th>Back 2</th> </tr>
-<tr>
-<th>Close</th>
-<td>i</td> <td>y</td> <td> </td> <td> </td> <td>ɨ</td> 
-<td>ʉ</td> <td> </td> <td> </td> <td>ɯ</td> <td>u</td>
-</tr>
-<tr>
-<th>Near-Close</th>
-<td> </td> <td> </td> <td>ɪ</td> <td>ʏ</td> <td> </td>
-<td> </td> <td> </td> <td>ʊ</td> <td> </td> <td> </td>
-</tr>
-<tr>
-<th>Close-Mid</th>
-<td> </td> <td>e</td> <td>ø</td> <td> </td> <td>ɘ</td>
-<td> </td> <td>ɵ</td> <td> </td> <td>ɤ</td> <td>o</td>
-</tr>
-<tr>
-<th>Mid</th>
-<td> </td> <td> </td> <td> </td> <td> </td> <td> </td> 
-<td>ə</td> <td> </td> <td> </td> <td> </td> <td> </td>
-</tr>
-<tr>
-<th>Open-Mid</th>
-<td> </td> <td> </td> <td> </td> <td>ɛ</td> <td> </td>
-<td>œ</td> <td>ɜ</td> <td>ɞ</td> <td>ʌ</td> <td>ɔ</td>
-</tr>
-<tr>
-<th>Near-Open</th>
-<td> </td> <td> </td> <td> </td> <td>æ</td> <td> </td>
-<td> </td> <td>ɐ</td> <td> </td> <td> </td> <td> </td>
-</tr>
-<tr>
-<th>Open</th>
-<td> </td> <td> </td> <td> </td> <td> </td> <td>a</td>
-<td> </td> <td>ä</td> <td> </td> <td>ɑ</td> <td>ɒ</td>
-</tr>
-
-</table><br>
-<table id="consonants">
-<tr>
-<th><h2>Pulmonic Consonants</h2></th>
-<th>Unvoiced Bilabial</th> <th>Voiced Bilabial</th>
-<th>Unvoiced Labiodental</th> <th>Voiced Labiodental</th>
-<th>Unvoiced Dental</th> <th>Voiced Dental</th>
-<th>Unvoiced Alveolar</th><th>Voiced Alveolar</th>
-<th>Unvoiced Post Alveolar</th><th>Voiced Post Alveolar</th>
-<th>Unvoiced Retroflex</th><th>Voiced Retroflex</th>
-<th>Unvoiced Palatal</th><th>Voiced Palatal</th>
-<th>Unvoiced Velar</th><th>Voiced Velar</th>
-<th>Unvoiced Uvular</th><th>Voiced Uvular</th>
-<th>Unvoiced Pharyngeal</th><th>Voiced Pharyngeal</th>
-<th>Unvoiced Glottal</th><th>Voiced Glottal</th>
-</tr>
-<tr>
-<th>Plosive</th>
-<td>p</td> <td>b</td> <td> </td> <td> </td> <td> </td> <td> </td> <td>t</td>
-<td>d</td> <td> </td> <td> </td> <td>ʈ</td> <td>ɖ</td> <td>c</td> <td>ɟ</td>
-<td>k</td> <td>g</td> <td>q</td> <td>ɢ</td> <td> </td> <td>N/A</td> <td>ʔ</td>
-<td>N/A</td>
-</tr>
-<tr>
-<th>Nasal</th>
-<td> </td> <td>m</td> <td> </td> <td>ɱ</td> <td> </td> <td> </td> <td> </td>
-<td>n</td> <td> </td> <td> </td> <td> </td> <td>ɳ</td> <td> </td> <td>ɲ</td>
-<td> </td> <td>ŋ</td> <td> </td> <td>ɴ</td> <td>N/A</td> <td>N/A</td> <td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<th>Trill</th>
-<td> </td> <td>ʙ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-<td>r</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-<td>N/A</td> <td>N/A</td> <td> </td> <td>ʀ</td> <td> </td> <td> </td> <td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<th>Tap or Flap</th>
-<td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-<td>ɾ</td> <td> </td> <td> </td> <td> </td> <td>ɽ</td> <td> </td> <td> </td>
-<td>N/A</td> <td>N/A</td> <td> </td> <td> </td> <td> </td> <td> </td> <td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<th>Fricative</th>
-<td>ɸ</td> <td>β</td> <td>f</td> <td>v</td> <td>θ</td> <td>ð</td> <td>s</td>
-<td>z</td> <td>ʃ</td> <td>ʒ</td> <td>ʂ</td> <td>ʐ</td> <td>ç</td> <td>ʝ</td>
-<td>x</td> <td>ɣ</td> <td>χ</td> <td>ʁ</td> <td>ħ</td> <td>ʕ</td> <td>h</td>
-<td>ɦ</td>
-</tr>
-<tr>
-<th>Lateral Fricative</th>
-<td>N/A</td> <td>N/A</td> <td>N/A</td> <td>N/A</td> <td> </td> <td> </td> <td>ɬ</td>
-<td>ɮ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-<td></td> <td> </td> <td> </td> <td> </td> <td>N/A</td> <td>N/A</td> <td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<th>Approximant</th>
-<td> </td> <td> </td> <td> </td> <td>ʋ</td> <td> </td> <td> </td> <td> </td>
-<td>ɹ</td> <td> </td> <td> </td> <td> </td> <td>ɻ</td> <td> </td> <td>j</td>
-<td> </td> <td>ɰ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<th>Lateral Approximant</th>
-<td>N/A</td> <td>N/A</td> <td>N/A</td> <td>N/A</td> <td> </td> <td> </td> <td>ɬ</td>
-<td>ɮ</td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
-<td> </td> <td> </td> <td> </td> <td></td> <td>N/A</td> <td>N/A</td> <td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-
-
-
-
-
-
-</table><br>
-<textarea name="IPA" id="consound" rows="1" onKeyUp="transcrire()"  class="cadr"></textarea>
+<section id="three">
+<div class="container">
+<h3>Process</h3>
+<p>Research and write major myths without any names, maybe choose real myths with the names removed.</p>
+<p>Examples: King X pulled the X weapon from X stone. God(dess) X had X, Y, and Z children. 
+Y wrote M language. Emperor/ess turned into the C mountain when they died. Etc.</p>
+<p>Generate names to replace the letters</p>
+<p><a href = "https://www.random.org/lists/" target="_blank">List Randomizer website</a> 
+The original name but pronounced with mouth full, Etc.</p>
+<p><b>Example:</b> X weapon is now Dolgrath, Mother Goddess is now Shinit.</p>
 <br>
+<p>Use those as base words whose definition is the general noun of the object</p>
+<p><b>Example:</b> Gratha was a mace so now “gratha” means “mace.” 
+Shinit means “Mother Goddess” now and is applied to other maternal 
+goddesses as a title.</p>
+<br>
+<p>Deconstruct the longer ones to mean full sentences.</p>
+<p><b>Example:</b> “Shi” means mother now and “nit” means “All.” 
+Possibly “Nit” can mean “Queen” if the culture claims their rulers are 
+descended from that goddess, like Pharohs.</p>
+<br>
+<p>Count out the sounds in those chosen words</p>
+<p><b>Example:</b> Consonants: [ʃ], [n], [t], [g], [r], [θ] Vowels: [i], [I], [ɐ], [ʌ]</p>
+<br>
+<p>Repeat but less freely</p>
+<p>Step 1 myths must have relationships to previous choices.</p>
+<p>There cannot be two gods/goddesses of the same thing without fighting.</p>
+<p>Myths about the same god with different morals or opposing characteristics attached to the same character require explanation</p>
+<br>
+<p>Step 2 Minimize permitted sounds during name generation.</p>
+<p>Replace letters or ban words with too many outside parameters.</p> 
+<br>
+<p>Step 3 specify definitions properly</p>
+<p>If two goddesses have “Mother” aspects maybe one has 
+implications of birth-giver (Gaia) and the other has 
+found-mother aspects or was a drift from “Aunt” etc.</p>
+<p>Mercury is not Odin and polarizing their specific meanings 
+and definitions allows for more range.</p>
+<br>
+<p>Step 4 Pay attention to repeated syllables.</p>
+<p><b>Example:</b> If Shinit and Dalshi are both associated with rulership
+ then “Shi” also has “ruler” connotations. 
+if Dalshi is male then Masculine titles follow names while feminine titles 
+precede them and this tells something about word order. <br>
+<i>As above,</i> if “Shi” means “mother” it might change to mean parent 
+or there may be specific connotations about the job of a king/queen</p><<br>
+&nbsp;
+<p>Once you have enough words to rewrite the single-sentence myth, then you 
+have enough to scatter into the rest of the story.</p>
+<p><b>Examples:</b> If a local ruler is mentioned then they are called by "shi."
+You might call a parent or parent-figure "shi" as well. If Dai meant "trickster"
+ then an old man may yell "Dai Dai!" at the brat that tp'd his house.</p><br>
+<p>While it would be impressive to create a functional language and write an 
+entire book in it, nobody would read that. The best way then, is to find 
+common phrases, deep cultural references, things that people would pepper their 
+language with, exclamations, profanity, greetings, parts of speech, phrases and 
+lessons.</p><br>
+<p>Excalibur comes from the Welsh word for sword.</p>
 
 
-
-
-
-
-
-
-
-<footer>
-<div class="footer"> &copy; Copyright 2020
 </div>
-</footer>
-</div>
+</section>
 
-</body>
+<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Kiersten Lynner. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
 
+			</div>
 
+		<!-- Scripts -->
+			<script src="jquery.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
+
+	</body>
 </html>
